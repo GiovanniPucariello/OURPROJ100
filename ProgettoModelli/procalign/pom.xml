@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>fr.inrialpes.exmo</groupId>
+        <artifactId>align-project</artifactId>
+        <version>5.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>fr.inrialpes.exmo.align</groupId>
+    <artifactId>procalign</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Reference implementation of the Alignment API</name>
+    <description>Implementation of the Alignment API for manipulating ontology alignments.</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.semanticweb.owl</groupId>
+            <artifactId>align-api</artifactId>
+            <version>${align-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>fr.inrialpes.exmo</groupId>
+            <artifactId>ontowrap</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>fr.inrialpes.exmo</groupId>
+            <artifactId>match-utils</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>gnu.getopt</groupId>
+            <artifactId>java-getopt</artifactId>
+            <version>1.0.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.semanticweb</groupId>
+            <artifactId>owl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.semanticweb</groupId>
+            <artifactId>owlapi</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.semanticweb.HermiT</groupId>
+            <artifactId>HermiT</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>fr.paris8.iut.info.iddl</groupId>
+            <artifactId>iddl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.api</groupId>
+            <artifactId>google-api-translate-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>jena-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.7</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
